@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <form action="{{ url_for('predict') }}" method="post">
+        <h1>DIABETES PREDICTION</h1>
+        <label for="Enter Any No">Enter Any No</label>
+        <input type="number" id="Enter Any No" name="ENTER ANY NO" required>
+
+        <label for="age">Age</label>
+        <input type="number" id="age" name="AGE" required>
+        
+        <label for="hypertension">Hypertension </label>
+        <input type="number" id="hypertension" name="HYPERTENSION" required>
+        
+        <label for="heart-disease">Heart Disease </label>
+        <input type="number" id="heart-disease" name="HEART DISEASE" required>
+        
+        <label for="bmi">Body Mass Index (BMI)</label>
+        <input type="number" id="bmi" name="BODY MASS INDEX (BMI)" required step="0.01">
+        
+        <label for="hba1c-level">HbA1c Level</label>
+        <input type="number" id="hba1c-level" name="HbA1c LEVEL" required step="0.01">
+        
+        <label for="glucose-level">Blood Glucose Level</label>
+        <input type="number" id="glucose-level" name="BLOOD GLUCOSE LEVEL" required>
+        
+        <label for="gender-male">Gender Male </label>
+        <input type="number" id="gender-male" name="GENDER gender-male" required>
+        
+        <label for="gender-female">Gender Female </label>
+        <input type="number" id="gender-female" name="GENDER FEMALE" required>
+        
+        <label for="smoke-ever">Smoke Ever </label>
+        <input type="number" id="smoke-ever" name="SMOKE EVER" required>
+        
+        <label for="smoke-former">Smoke Former </label>
+        <input type="number" id="smoke-former" name="SMOKE FORMER" required>
+        
+        <label for="smoke-never">Smoke Never </label>
+        <input type="number" id="smoke-never" name="SMOKE NEVER " required>
+        
+        <label for="smoke-current">Smoke Current </label>
+        <input type="number" id="smoke-current" name="SMOKE CURRENT " required>
+        
+        <button>CONTINUE</button>
+    </form>
+</body>
+</html>

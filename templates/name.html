@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes Prediction Result</title>
+    <style>
+        body {
+            background-color: skyblue;
+            text-align: center; /* Center-align the text within the body */
+        }
+
+        h1 {
+            text-align: center; /* Center-align the text within the h1 element */
+        }
+
+        p {
+            text-align: center; /* Center-align the text within the p element */
+        }
+    </style>
+</head>
+<body>
+    <h1>Diabetes Prediction Result</h1>
+    
+    {% if prediction_text == 1 %}
+        <p>You are affected by a diabetic disease.</p>
+    {% else %}
+        <p>You are not affected by a diabetic disease.</p>
+    {% endif %}
+</body>
+</html>
